@@ -1,0 +1,25 @@
+{
+  "name": "abback-test",
+  "version": "0.0.1",
+  "description": "Test for AbBack",
+  "main": "app.js",
+  "contributors": [
+    {
+      "name": "Pedro Rodriguez",
+      "email": "me@pedropablo.xyz"
+    }
+  ],
+  "scripts": {
+    "test": "NODE_ENV=test NODE_LOGGER_NO_CONSOLE=false istanbul cover node_modules/.bin/mocha test/*.js"
+  },
+  "dependencies": {
+    "q": "^1.5.0",
+    "eslint": "^3.18.0",
+    "istanbul": "~0.4.5",
+    "mocha": "^2.1.0",
+    "chai": "*",
+    "supertest": "^3.0.0",
+    "abback": "file:../"
+  },
+  "license": "MIT"
+}
